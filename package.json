@@ -1,0 +1,21 @@
+{
+  "name": "speech-to-text-realtime",
+  "version": "1.0.0",
+  "description": "Real-time multilingual (Hindi + English) speech-to-text web app with a Postgres-backed transcription history dashboard",
+  "main": "server/index.js",
+  "type": "commonjs",
+  "scripts": {
+    "start": "node server/index.js",
+    "dev": "node --watch server/index.js",
+    "build": "cd client && npm install && npm run build",
+    "test": "node --test server/test/*.test.js"
+  },
+  "engines": { "node": ">=20" },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "pg": "^8.12.0",
+    "ws": "^8.18.0"
+  }
+}
